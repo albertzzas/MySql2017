@@ -1,0 +1,36 @@
+show database XXX;
+show create database xxx;
+
+
+show engines;
+
+show engines\G;网格显示
+
+show create schema test1; 
+
+show schemas;
+
+show tables;
+
+
+#######################################
+
+select version()  查版本
+
+select user()
+
+select now()
+
+select now() /c不执行
+
+
+
+use XXXx; --切换DB
+
+
+
+help use / (XXXXX);
+#################################
+drop user 'testxxx'@'localhost'
+drop 无法删除（eg主机名大写）-> delete
+flush privileges
