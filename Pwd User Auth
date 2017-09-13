@@ -19,13 +19,16 @@ delete
 
 
 
-Auth  localhost 10.0.0.%  10.0.0.0/24
+Auth  
 
 grant Create user and Grant to user
 grant all[privileges] on db1.XX to [']testXXX[']@'localhost' iedntified by 'password';
 flush privileges;
 
 grant and create 可以配合
+revoke insert on xxx@'x.x.x.x'
 
+远程连接DB
+localhost 替代成 10.0.0.%  10.0.0.0/24 授权某些IP段
 
-
+mysql --help
